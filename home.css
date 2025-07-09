@@ -290,7 +290,8 @@ main.show-main {
     .side-menu ul li a {
         font-size: 2rem;
     }
-    .side-menu{
+
+    .side-menu {
         top: 200px;
     }
 }
@@ -311,7 +312,8 @@ main.show-main {
     .side-menu ul li a {
         font-size: 2.5rem;
     }
-     .side-menu{
+
+    .side-menu {
         top: 150px;
     }
 }
@@ -343,10 +345,11 @@ main.show-main {
         margin-left: 27.5rem;
         top: 5px;
     }
-       .side-menu{
+
+    .side-menu {
         top: 100px;
     }
-   
+
 }
 
 @media only screen and (max-width:1445px) {
@@ -375,7 +378,8 @@ main.show-main {
     .so-list {
         margin-left: 30rem;
     }
-     .so-list {
+
+    .so-list {
         top: 4px;
     }
 }
@@ -424,14 +428,16 @@ main.show-main {
     .so-list {
         top: 3px;
     }
-     .side-menu {
+
+    .side-menu {
         width: 13rem;
     }
 
     .side-menu ul li a {
         font-size: 4rem;
     }
-    .logo.move-top-left{
+
+    .logo.move-top-left {
         left: 20px;
     }
 }
@@ -440,9 +446,11 @@ main.show-main {
     html {
         font-size: 2.5px;
     }
-  .logo.move-top-left{
+
+    .logo.move-top-left {
         left: 15px;
     }
+
     .so-list {
         margin-left: 30rem;
     }
