@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'Norman';
+    src: url('fonts/Norman.woff2') format('woff2'),
+         url('fonts/Norman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Norman';
+    src: url('fonts/Norman.woff2') format('woff2'),
+         url('fonts/Norman.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Restore W00 Black";
+    src: url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.eot");
+    src: url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.svg#Restore W00 Black")format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    font-family: 'Bodoni Moda', serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.coming-soon-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-soon {
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 4px;
+    /* margin-bottom: 15px; */
+    font-family: 'Norman', 'Times New Roman', serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.logo {
+    margin-bottom: 0px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+/* .logo img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    mix-blend-mode: screen;
+    object-fit: contain;
+    object-position: center;
+    clip-path: inset(40% 0% 40% 0%);
+    transform: scale(3);
+} */
+
+.logo-ooh {
+    color: white;
+    font-family: "Restore W00 Black", sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.logo-so {
+    color: #fc2c1d;
+    font-family: 'Norman', 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.85em;
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    bottom: -1px; /* Fine-tune vertical alignment */
+}
+
+.first-to-know {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 340px;
+}
+
+.signup-form input[type="email"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    text-align: center;
+    outline: none;
+}
+
+.signup-form input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.signup-form button {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 400;
+}
+
+.signup-form button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.message {
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    min-height: 1.2em;
+    padding: 5px 0;
+}
+
+.success {
+    color: #6FE178;
+}
+
+.error {
+    color: #fc2c1d;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.error-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: #fc2c1d;
+    text-align: center;
+    display: none;
+}
+
+/* Add a loading state for the button */
+.signup-form button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+  
+    
+    .coming-soon {
+        font-size: 1.7rem;
+        letter-spacing: 3px;
+    }
+    
+    .first-to-know {
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 20px 0;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+ 
+    
+    .coming-soon {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+    
+    .first-to-know {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    
+    .signup-form {
+        max-width: 280px;
+    }
+    
+    .signup-form input[type="email"] {
+        font-size: 0.8rem;
+        margin-bottom: 25px;
+    }
+    
+    .signup-form button {
+        font-size: 0.7rem;
+        padding: 8px 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+   
+    
+    .coming-soon {
+        font-size: 1.2rem;
+    }
+    
+    .signup-form {
+        max-width: 250px;
+    }
+}
+
+/* Handle very small heights (like landscape on small phones) */
+@media screen and (max-height: 500px) {
+    body {
+        height: auto;
+        padding: 15px 0;
+    }
+    
+ 
+    
+    .coming-soon {
+        margin-bottom: 10px;
+    }
+    
+    .first-to-know {
+        margin-bottom: 15px;
+    }
+    
+    .signup-form input[type="email"] {
+        margin-bottom: 15px;
+    }
+}

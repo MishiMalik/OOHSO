@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOHSO</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: #fff;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            font-weight: bold;
+            color: #000;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+            z-index: 10;
+        }
+
+        .logo.move-top-left {
+            top: 20px;
+            left: 30px;
+            transform: none;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="logo" id="logo">OOHSO</div>
+
+    <script>
+        const logo = document.getElementById("logo");
+
+        logo.addEventListener("click", () => {
+            logo.classList.add("move-top-left");
+        });
+    </script>
+
+</body>
+
+</html>

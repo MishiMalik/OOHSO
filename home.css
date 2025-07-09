@@ -1,0 +1,453 @@
+@font-face {
+    font-family: 'Norman';
+    src: url('fonts/Norman.woff2') format('woff2'),
+        url('fonts/Norman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Norman';
+    src: url('fonts/Norman.woff2') format('woff2'),
+        url('fonts/Norman.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Restore W00 Black";
+    src: url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.eot");
+    src: url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/cd88cb7fee9e817fb5d3c577de740941.svg#Restore W00 Black")format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 8px;
+}
+
+body {
+    background-color: #0d0d0d;
+    font-family: 'Bodoni Moda', serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 0; */
+    /* max-width: 1600px;
+    margin: 0 auto; */
+    position: relative;
+}
+
+
+.logo {
+    /* font-size: 10rem;
+    margin-bottom: 50px;
+    line-height: 0.8; */
+    /* display: inline-block; */
+    /* text-align: center; */
+    /* position: relative; */
+    /* white-space: nowrap; */
+}
+
+.logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15rem;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    z-index: 10;
+}
+
+.logo.move-top-left {
+    top: 0px;
+    left: 30px;
+    transform: none;
+    font-size: 10rem;
+}
+
+.logo-ooh {
+    color: white;
+    font-family: "Restore W00 Black", sans-serif;
+    text-transform: uppercase;
+    /* font-size: 1em; */
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.logo-so {
+    color: #fc2c1d;
+    font-family: 'Norman', 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 0.85em;
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    bottom: -2px;
+    /* Fine-tune vertical alignment */
+}
+
+.logo.move-top-left .logo-so {
+    opacity: 0;
+    transition: opacity 4s ease;
+}
+
+/* Start hidden */
+.so-list {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 5s ease, transform 5s ease;
+    list-style: none;
+    padding-left: 0;
+    color: #fc2c1d;
+    font-family: 'Norman', 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 8.3rem;
+    display: inline-block;
+    /* line-height: 90px; */
+    margin-left: 27rem;
+    /* margin-top: -10px; */
+    position: sticky;
+    top: 10px;
+}
+
+/* Show with fade-in and slide-up */
+.so-list.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFadeDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+.so-list {
+    transition: all 0.5s ease;
+}
+
+/* Disappear animation for entire list */
+.so-list.disappear {
+    animation: slideFadeDown 5s ease forwards;
+}
+
+.so-list.appear {
+    animation: slideFadeUp 1s ease forwards;
+}
+
+.so-list li {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.so-list li.animate {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Staggered delay for each line */
+.so-list li:nth-child(1).animate {
+    animation-delay: 1s;
+}
+
+.so-list li:nth-child(2).animate {
+    animation-delay: 1.5s;
+}
+
+.so-list li:nth-child(3).animate {
+    animation-delay: 2s;
+}
+
+.so-list li:nth-child(4).animate {
+    animation-delay: 2.5s;
+}
+
+.so-list li:nth-child(5).animate {
+    animation-delay: 3s;
+}
+
+.so-list li:nth-child(6).animate {
+    animation-delay: 3.5s;
+}
+
+/* =========================================================header */
+.side-menu {
+    position: fixed;
+    left: 0;
+    bottom: 60px;
+    top: 100px;
+    width: 70px;
+
+}
+
+.side-menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    list-style: none;
+}
+
+.side-menu ul li {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-orientation: sideways;
+    text-align: right;
+    text-orientation: sideways;
+
+}
+
+.side-menu ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    font-family: 'Bodoni Moda', sans-serif;
+    text-transform: uppercase;
+}
+
+
+main {
+    opacity: 0;
+    /* transform: translateY(40px); */
+    transition: opacity 0.8s ease;
+    pointer-events: none;
+    background-color: aquamarine;
+    width: 100%;
+    min-height: 100vh;
+}
+
+main.show-main {
+    opacity: 1;
+    /* transform: translateY(0); */
+    pointer-events: auto;
+}
+
+@media only screen and (max-width:3200px) {
+    html {
+        font-size: 16px;
+    }
+
+    .so-list {
+        margin-left: 25rem;
+    }
+
+    .side-menu {
+        width: 7rem;
+    }
+
+    .side-menu ul li a {
+        font-size: 2rem;
+    }
+    .side-menu{
+        top: 200px;
+    }
+}
+
+@media only screen and (max-width:2200px) {
+    html {
+        font-size: 14px;
+    }
+
+    .so-list {
+        margin-left: 25rem;
+    }
+
+    .side-menu {
+        width: 7rem;
+    }
+
+    .side-menu ul li a {
+        font-size: 2.5rem;
+    }
+     .side-menu{
+        top: 150px;
+    }
+}
+
+@media only screen and (max-width:1800px) {
+    html {
+        font-size: 10px;
+    }
+
+    .so-list {
+        margin-left: 26rem;
+    }
+
+    .side-menu {
+        width: 8rem;
+    }
+
+    .side-menu ul li a {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width:1610px) {
+    html {
+        font-size: 8px;
+    }
+
+    .so-list {
+        margin-left: 27.5rem;
+        top: 5px;
+    }
+       .side-menu{
+        top: 100px;
+    }
+   
+}
+
+@media only screen and (max-width:1445px) {
+    html {
+        font-size: 7px;
+    }
+
+    .so-list {
+        margin-left: 27.5rem;
+    }
+
+    .side-menu {
+        width: 10rem;
+    }
+
+    .side-menu ul li a {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 5px;
+    }
+
+    .so-list {
+        margin-left: 30rem;
+    }
+     .so-list {
+        top: 4px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    html {
+        font-size: 4px;
+    }
+
+    .so-list {
+        margin-left: 32rem;
+    }
+
+    .so-list {
+        top: 5px;
+    }
+
+    .side-menu {
+        width: 13rem;
+    }
+
+    .side-menu ul li a {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    html {
+        font-size: 4px;
+    }
+
+    .so-list {
+        margin-left: 32rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    html {
+        font-size: 3px;
+    }
+
+    .so-list {
+        margin-left: 30rem;
+    }
+
+    .so-list {
+        top: 3px;
+    }
+     .side-menu {
+        width: 13rem;
+    }
+
+    .side-menu ul li a {
+        font-size: 4rem;
+    }
+    .logo.move-top-left{
+        left: 20px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    html {
+        font-size: 2.5px;
+    }
+  .logo.move-top-left{
+        left: 15px;
+    }
+    .so-list {
+        margin-left: 30rem;
+    }
+
+    .so-list {
+        top: 2px;
+    }
+}
