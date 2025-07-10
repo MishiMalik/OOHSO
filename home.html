@@ -34,7 +34,7 @@
         <div class="side-menu">
             <ul>
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="#home" class="active">Home</a>
 
                 </li>
                 <li>
@@ -247,6 +247,32 @@
 
             lastScroll = currentScroll;
         });
+
+
+
+        const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".side-menu a");
+
+function updateActiveLink() {
+    const centerY = window.scrollY + window.innerHeight / 2;
+
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const sectionTop = window.scrollY + rect.top;
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        if (centerY >= sectionTop && centerY < sectionBottom) {
+            // Match section id to link href
+            const id = section.getAttribute("id");
+            navLinks.forEach(link => {
+                link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+            });
+        }
+    });
+}
+
+window.addEventListener("scroll", updateActiveLink);
+window.addEventListener("load", updateActiveLink); // also check on load
 
     </script>
 

@@ -270,7 +270,7 @@ body {
     text-transform: uppercase;
     font-family: 'Agenda-Light';
 }
-
+.side-menu a.active,
 .side-menu ul li a:hover {
     color: #FF0000;
 }
@@ -347,9 +347,11 @@ main.show-main {
 section {
     padding: 100px 0;
 }
-.contact{
+
+.contact {
     margin-bottom: 30px !important;
 }
+
 @media only screen and (max-width:4000px) {
     html {
         font-size: 16px;
@@ -414,7 +416,7 @@ section {
     }
 
 
-       .heading {
+    .heading {
         font-size: 46px;
     }
 
@@ -486,50 +488,50 @@ section {
         font-size: 3rem;
     }
 
-    
-.heading {
-    font-size: 33px;
-    font-weight: 600;
-    color: #82DB9F;
-    font-family: 'Agenda-Light';
-}
 
-.text {
-    font-family: 'Agenda-Light';
-    font-weight: 400;
-    font-size: 22px;
-}
+    .heading {
+        font-size: 33px;
+        font-weight: 600;
+        color: #82DB9F;
+        font-family: 'Agenda-Light';
+    }
 
-.contact h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 0;
-    color: white;
-    font-family: 'Agenda-Light';
-    text-transform: uppercase;
-}
+    .text {
+        font-family: 'Agenda-Light';
+        font-weight: 400;
+        font-size: 22px;
+    }
 
-.contact p {
-    font-family: 'Agenda-Light';
-    font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
+    .contact h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: white;
+        font-family: 'Agenda-Light';
+        text-transform: uppercase;
+    }
 
-.contact a {
-    color: #FF0000;
-    font-family: 'Norman', 'Times New Roman', serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 4rem;
-    /* display: inline-block; */
-    /* vertical-align: baseline; */
-    /* position: relative; */
-    /* Fine-tune vertical alignment */
-    text-decoration: none;
-    line-height: 3rem;
-}
+    .contact p {
+        font-family: 'Agenda-Light';
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .contact a {
+        color: #FF0000;
+        font-family: 'Norman', 'Times New Roman', serif;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 4rem;
+        /* display: inline-block; */
+        /* vertical-align: baseline; */
+        /* position: relative; */
+        /* Fine-tune vertical alignment */
+        text-decoration: none;
+        line-height: 3rem;
+    }
 
 }
 
@@ -567,7 +569,8 @@ section {
     .side-menu ul li a {
         font-size: 4rem;
     }
-       .heading {
+
+    .heading {
         font-size: 30px;
     }
 
@@ -587,6 +590,7 @@ section {
         font-size: 7rem;
     }
 }
+
 @media only screen and (max-width:768px) {
     html {
         font-size: 6px;
@@ -607,10 +611,12 @@ section {
     .side-menu ul li a {
         font-size: 3.5rem;
     }
+
     section {
-    padding: 50px 0;
+        padding: 50px 0;
+    }
 }
-}
+
 @media only screen and (max-width:680px) {
     html {
         font-size: 4px;
@@ -645,10 +651,11 @@ section {
     .logo.move-top-left {
         left: 20px;
     }
-      /* .side-menu ul li a {
+
+    /* .side-menu ul li a {
         font-size: 4rem;
     } */
-       .heading {
+    .heading {
         font-size: 20px;
     }
 
