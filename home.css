@@ -63,7 +63,7 @@ body {
     overflow-y: hidden;
 }
 
-.center-logo{
+.center-logo {
     position: fixed;
     top: 33%;
 }
@@ -423,9 +423,10 @@ section {
         font-size: 12px;
     }
 
-    #contact{
+    #contact {
         margin-top: 100px;
     }
+
     .style-carousel {
         margin-top: 60px;
     }
@@ -477,9 +478,10 @@ section {
         font-size: 11px;
     }
 
-    #contact{
+    #contact {
         margin-top: 100px;
     }
+
     .style-carousel {
         margin-top: 10px;
     }
@@ -522,9 +524,10 @@ section {
         font-size: 8px;
     }
 
-   #contact{
+    #contact {
         margin-top: 100px;
     }
+
     .style-carousel {
         margin-top: 30px;
     }
@@ -597,9 +600,10 @@ section {
         font-size: 8px;
     }
 
-    #contact{
+    #contact {
         margin-top: 100px;
     }
+
     .style-carousel {
         margin-top: 10px;
     }
@@ -622,9 +626,10 @@ section {
         font-size: 7px;
     }
 
-    #contact{
+    #contact {
         margin-top: 100px;
     }
+
     .style-carousel {
         margin-top: 10px;
     }
@@ -671,9 +676,10 @@ section {
         font-size: 6px;
     }
 
-   #contact{
+    #contact {
         margin-top: 50px;
     }
+
     .style-carousel {
         margin-top: 0px;
     }
@@ -703,9 +709,11 @@ section {
     html {
         font-size: 4px;
     }
- #contact{
+
+    #contact {
         margin-top: 30px;
     }
+
     .so-list {
         margin-left: 30.5rem;
         top: 4px;
@@ -716,9 +724,11 @@ section {
     html {
         font-size: 3px;
     }
- #contact{
+
+    #contact {
         margin-top: 30px;
     }
+
     .so-list {
         margin-left: 30rem;
     }
