@@ -34,15 +34,15 @@
         <div class="side-menu">
             <ul>
                 <li>
-                    <a href="#home" class="active">Home</a>
+                    <a href="home.html" class="active">Home</a>
 
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="contact.html">Contact</a>
 
                 </li>
                 <li>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="portfolio.html">Portfolio</a>
                 </li>
             </ul>
         </div>
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio">
+        <!-- <section id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-11 col-lg-10 col-9 mx-auto">
@@ -146,7 +146,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
         <!-- place footer here -->
@@ -251,29 +251,29 @@
 
 
 
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll(".side-menu a");
+        // const sections = document.querySelectorAll("section");
+        // const navLinks = document.querySelectorAll(".side-menu a");
 
-        function updateActiveLink() {
-            const centerY = window.scrollY + window.innerHeight / 2;
+        // function updateActiveLink() {
+        //     const centerY = window.scrollY + window.innerHeight / 2;
 
-            sections.forEach(section => {
-                const rect = section.getBoundingClientRect();
-                const sectionTop = window.scrollY + rect.top;
-                const sectionBottom = sectionTop + section.offsetHeight;
+        //     sections.forEach(section => {
+        //         const rect = section.getBoundingClientRect();
+        //         const sectionTop = window.scrollY + rect.top;
+        //         const sectionBottom = sectionTop + section.offsetHeight;
 
-                if (centerY >= sectionTop && centerY < sectionBottom) {
-                    // Match section id to link href
-                    const id = section.getAttribute("id");
-                    navLinks.forEach(link => {
-                        link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
-                    });
-                }
-            });
-        }
+        //         if (centerY >= sectionTop && centerY < sectionBottom) {
+        //             // Match section id to link href
+        //             const id = section.getAttribute("id");
+        //             navLinks.forEach(link => {
+        //                 link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+        //             });
+        //         }
+        //     });
+        // }
 
-        window.addEventListener("scroll", updateActiveLink);
-        window.addEventListener("load", updateActiveLink); // also check on load
+        // window.addEventListener("scroll", updateActiveLink);
+        // window.addEventListener("load", updateActiveLink); // also check on load
 
     </script>
 

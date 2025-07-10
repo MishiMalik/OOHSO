@@ -64,15 +64,6 @@ body {
 }
 
 
-.logo {
-    /* font-size: 10rem;
-    margin-bottom: 50px;
-    line-height: 0.8; */
-    /* display: inline-block; */
-    /* text-align: center; */
-    /* position: relative; */
-    /* white-space: nowrap; */
-}
 
 .logo {
     position: fixed;
@@ -85,6 +76,19 @@ body {
     cursor: pointer;
     transition: all 1s ease-in-out;
     z-index: 10;
+}
+
+.logo2 {
+    position: fixed;
+
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    z-index: 10;
+    top: 0px;
+    left: 30px;
+    transform: none;
+    font-size: 10rem;
 }
 
 .logo.move-top-left {
@@ -271,6 +275,7 @@ body {
     text-transform: uppercase;
     font-family: 'Agenda-Light';
 }
+
 .side-menu a.active,
 .side-menu ul li a:hover {
     color: #FF0000;
@@ -280,7 +285,7 @@ main {
     opacity: 0;
     /* transform: translateY(40px); */
     transition: opacity 0.8s ease;
-    pointer-events: none;
+    /* pointer-events: none; */
     width: 100%;
     min-height: 100vh;
 }
@@ -289,6 +294,10 @@ main.show-main {
     opacity: 1;
     /* transform: translateY(0); */
     pointer-events: auto;
+}
+
+.style-carousel {
+    margin-top: 50px;
 }
 
 .carousel-img {
@@ -358,8 +367,17 @@ section {
         font-size: 16px;
     }
 
+    #contact,
+    .style-carousel {
+        margin-top: 150px;
+    }
+
+    .carousel-img {
+        height: 80vh;
+    }
+
     .so-list {
-        margin-left: 25rem;
+        margin-left: 24.8rem;
     }
 
     .side-menu {
@@ -398,6 +416,17 @@ section {
 @media only screen and (max-width:2200px) {
     html {
         font-size: 12px;
+    }
+
+    #contact{
+        margin-top: 100px;
+    }
+    .style-carousel {
+        margin-top: 60px;
+    }
+
+    .carousel-img {
+        height: 75vh;
     }
 
     .so-list {
@@ -443,6 +472,17 @@ section {
         font-size: 11px;
     }
 
+    #contact{
+        margin-top: 100px;
+    }
+    .style-carousel {
+        margin-top: 10px;
+    }
+
+    .carousel-img {
+        height: 75vh;
+    }
+
     .so-list {
         margin-left: 26rem;
     }
@@ -477,8 +517,19 @@ section {
         font-size: 8px;
     }
 
+   #contact{
+        margin-top: 100px;
+    }
+    .style-carousel {
+        margin-top: 30px;
+    }
+
+    .carousel-img {
+        height: 75vh;
+    }
+
     .so-list {
-        margin-left: 27.5rem;
+        margin-left: 26.5rem;
     }
 
     .side-menu {
@@ -541,8 +592,19 @@ section {
         font-size: 8px;
     }
 
+    #contact{
+        margin-top: 100px;
+    }
+    .style-carousel {
+        margin-top: 10px;
+    }
+
+    .carousel-img {
+        height: 75vh;
+    }
+
     .so-list {
-        margin-left: 30rem;
+        margin-left: 26.8rem;
     }
 
     .so-list {
@@ -555,8 +617,15 @@ section {
         font-size: 7px;
     }
 
+    #contact{
+        margin-top: 100px;
+    }
+    .style-carousel {
+        margin-top: 10px;
+    }
+
     .so-list {
-        margin-left: 29rem;
+        margin-left: 27rem;
     }
 
     .so-list {
@@ -588,7 +657,7 @@ section {
     }
 
     .contact a {
-        font-size: 7rem;
+        font-size: 4rem;
     }
 }
 
@@ -597,12 +666,19 @@ section {
         font-size: 6px;
     }
 
-    .so-list {
-        margin-left: 29rem;
+   #contact{
+        margin-top: 50px;
+    }
+    .style-carousel {
+        margin-top: 0px;
     }
 
     .so-list {
-        top: 5px;
+        margin-left: 28rem;
+    }
+
+    .so-list {
+        top: 3px;
     }
 
     .side-menu {
@@ -622,9 +698,12 @@ section {
     html {
         font-size: 4px;
     }
-
+ #contact{
+        margin-top: 30px;
+    }
     .so-list {
-        margin-left: 32rem;
+        margin-left: 30.5rem;
+        top: 4px;
     }
 }
 
@@ -632,7 +711,9 @@ section {
     html {
         font-size: 3px;
     }
-
+ #contact{
+        margin-top: 30px;
+    }
     .so-list {
         margin-left: 30rem;
     }
