@@ -607,6 +607,9 @@ section {
     .side-menu ul li a {
         font-size: 3.5rem;
     }
+    section {
+    padding: 50px 0;
+}
 }
 @media only screen and (max-width:680px) {
     html {
