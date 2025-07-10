@@ -29,6 +29,9 @@
         <div class="logo" id="logo">
             <span class="logo-ooh">OOH</span><span class="logo-so" id="logoSo">SO</span>
         </div>
+        <div class="center-logo" id="center-logo">
+            <img src="/images/logo-crop.gif" alt="" class="img-fluid">
+        </div>
     </header>
     <main>
         <div class="side-menu">
@@ -210,10 +213,12 @@
         const soList = document.getElementById("soList");
         const soItems = document.querySelectorAll("#soList li");
         const main = document.querySelector("main");
+        const centerLogo = document.getElementById("center-logo")
 
         logo.addEventListener("click", () => {
             // Move logo to top-left
             logo.classList.add("move-top-left");
+            centerLogo.classList.add("d-none")
 
             // After 600ms (logo movement), hide SO and show main
             setTimeout(() => {
