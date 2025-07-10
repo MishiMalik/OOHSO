@@ -366,13 +366,17 @@ section {
 .contact {
     margin-bottom: 30px !important;
 }
-
+.contact-body{
+    min-height: 100vh;
+    display: flex;
+    align-items:center ;
+}
 @media only screen and (max-width:4000px) {
     html {
         font-size: 16px;
     }
 
-    #contact,
+   
     .style-carousel {
         margin-top: 150px;
     }
@@ -423,9 +427,7 @@ section {
         font-size: 12px;
     }
 
-    #contact {
-        margin-top: 100px;
-    }
+   
 
     .style-carousel {
         margin-top: 60px;
@@ -478,9 +480,7 @@ section {
         font-size: 11px;
     }
 
-    #contact {
-        margin-top: 100px;
-    }
+   
 
     .style-carousel {
         margin-top: 10px;
@@ -524,9 +524,7 @@ section {
         font-size: 8px;
     }
 
-    #contact {
-        margin-top: 100px;
-    }
+  
 
     .style-carousel {
         margin-top: 30px;
@@ -600,9 +598,7 @@ section {
         font-size: 8px;
     }
 
-    #contact {
-        margin-top: 100px;
-    }
+ 
 
     .style-carousel {
         margin-top: 10px;
@@ -626,9 +622,7 @@ section {
         font-size: 7px;
     }
 
-    #contact {
-        margin-top: 100px;
-    }
+
 
     .style-carousel {
         margin-top: 10px;
@@ -676,9 +670,6 @@ section {
         font-size: 6px;
     }
 
-    #contact {
-        margin-top: 50px;
-    }
 
     .style-carousel {
         margin-top: 0px;
@@ -710,9 +701,7 @@ section {
         font-size: 4px;
     }
 
-    #contact {
-        margin-top: 30px;
-    }
+   
 
     .so-list {
         margin-left: 30.5rem;
@@ -725,9 +714,6 @@ section {
         font-size: 3px;
     }
 
-    #contact {
-        margin-top: 30px;
-    }
 
     .so-list {
         margin-left: 30rem;
