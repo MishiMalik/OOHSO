@@ -219,6 +219,7 @@
             setTimeout(() => {
                 logoSo.style.opacity = "0"; // optional: if you're still hiding SO
                 main.classList.add("show-main");
+                document.body.style.overflowY = "auto";
 
                 // Show SO list
                 soList.classList.add("show");
@@ -251,28 +252,28 @@
 
 
         const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".side-menu a");
+        const navLinks = document.querySelectorAll(".side-menu a");
 
-function updateActiveLink() {
-    const centerY = window.scrollY + window.innerHeight / 2;
+        function updateActiveLink() {
+            const centerY = window.scrollY + window.innerHeight / 2;
 
-    sections.forEach(section => {
-        const rect = section.getBoundingClientRect();
-        const sectionTop = window.scrollY + rect.top;
-        const sectionBottom = sectionTop + section.offsetHeight;
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                const sectionTop = window.scrollY + rect.top;
+                const sectionBottom = sectionTop + section.offsetHeight;
 
-        if (centerY >= sectionTop && centerY < sectionBottom) {
-            // Match section id to link href
-            const id = section.getAttribute("id");
-            navLinks.forEach(link => {
-                link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+                if (centerY >= sectionTop && centerY < sectionBottom) {
+                    // Match section id to link href
+                    const id = section.getAttribute("id");
+                    navLinks.forEach(link => {
+                        link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+                    });
+                }
             });
         }
-    });
-}
 
-window.addEventListener("scroll", updateActiveLink);
-window.addEventListener("load", updateActiveLink); // also check on load
+        window.addEventListener("scroll", updateActiveLink);
+        window.addEventListener("load", updateActiveLink); // also check on load
 
     </script>
 
