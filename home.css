@@ -272,12 +272,17 @@ body {
 .so-list li:nth-child(1).fade-out { animation-delay: 1s; }
 
 /* =========================================================header */
+section{
+    position: relative;
+    z-index: 3;
+}
 .side-menu {
     position: fixed;
     left: 0;
     bottom: 60px;
     top: 100px;
     width: 70px;
+    z-index: 10;
 
 }
 
@@ -382,7 +387,9 @@ main.show-main {
 .section {
     padding: 100px 0;
 }
-
+.section-top{
+    margin-top: 100px;
+}
 .contact {
     margin-bottom: 30px !important;
 }
@@ -470,18 +477,18 @@ main.show-main {
     font-size: 14px;
     color: black;
           font-family: 'Agenda-Light';
-          font-weight: 500;
+          font-weight: 600;
 }
 
 .footer-link{
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
           font-family: 'Agenda-Light';
           color: black;
 }
 .copyright{
       font-size: 14px;
-    font-weight: 500;  
+    font-weight: 600;  
           font-family: 'Agenda-Light';
 }
 .footer-box{
@@ -502,9 +509,9 @@ main.show-main {
         margin-top: 150px;
     }
 
-    .carousel-img {
+    /* .carousel-img {
         height: 80vh;
-    }
+    } */
 
     .so-list {
         margin-left: 24.8rem;
@@ -554,9 +561,9 @@ main.show-main {
         margin-top: 60px;
     }
 
-    .carousel-img {
+    /* .carousel-img {
         height: 75vh;
-    }
+    } */
 
     .so-list {
         margin-left: 25rem;
@@ -607,9 +614,9 @@ main.show-main {
         margin-top: 10px;
     }
 
-    .carousel-img {
+    /* .carousel-img {
         height: 75vh;
-    }
+    } */
 
     .so-list {
         margin-left: 26rem;
@@ -651,9 +658,9 @@ main.show-main {
         margin-top: 30px;
     }
 
-    .carousel-img {
+    /* .carousel-img {
         height: 75vh;
-    }
+    } */
 
     .so-list {
         margin-left: 26.5rem;
@@ -725,9 +732,9 @@ main.show-main {
         margin-top: 10px;
     }
 
-    .carousel-img {
+    /* .carousel-img {
         height: 75vh;
-    }
+    } */
 
     .so-list {
         margin-left: 26.8rem;
@@ -735,6 +742,9 @@ main.show-main {
 
     .so-list {
         top: 4px;
+    }
+    .slick-slide img{
+        min-height: 200px;
     }
 }
 
@@ -815,6 +825,9 @@ main.show-main {
     .section {
         padding: 50px 0;
     }
+    .section-top{
+    margin-top: 50px;
+}
     .footer-img{
         margin-bottom: 30px;
         height: 40px;
