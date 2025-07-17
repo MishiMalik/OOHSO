@@ -499,7 +499,12 @@ main.show-main {
     display: flex;
     align-items: center;
 }
-
+#home{
+    height: 400px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
 
 
